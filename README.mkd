@@ -1,5 +1,5 @@
 <img src="icon_small.png"
-     style="display: inline-block; float: left; margin-right: 10px; width: 1%" />
+     style="display: inline-block; float: left; margin-right: 10px; width: 10%" />
 <p style="font-weight: bold; font-size: 30pt">Article Generator</p>
 <br>
 <p>Article Generator is a tool for creating realistic news posts fora varity of uses. from fictional worlds, to trolling the internet, this tool is designed to create high quality headlines in the style of major news outlets.</p>
