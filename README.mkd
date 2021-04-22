@@ -1,8 +1,7 @@
-<img src="icon_small.png" style="display: inline-block; float: left; margin-right: 10px; width: 10%" />
+<img src="icon_small.png" style="display: inline-block; float: left; margin-right: 10px; width: 2%" />
 
 # **Article Generator**
 
-<br>
 <br>
 Article Generator is a tool for creating realistic news posts fora varity of uses. from fictional worlds, to trolling the internet, this tool is designed to create high quality headlines in the style of major news outlets.
 <br>
