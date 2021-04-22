@@ -1,4 +1,4 @@
-<img src="icon_small.png" style="display: inline-block; float: left; margin-right: 10px; width: 2%" />
+![alt text](icon_small.png "title")
 
 # **Article Generator**
 
