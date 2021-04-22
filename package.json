@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . Article-Generator --out=dist --platform=win32 --arch=x64 --icon=icon.ico"
+    "build": "electron-packager . Article-Generator --out=dist --platform=linux --arch=x64 --icon=icon.png"
   },
   "author": "Matthew Zenn",
   "license": "MIT",
