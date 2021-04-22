@@ -1,4 +1,4 @@
-![alt text](icon_small.png "title")
+![alt text](icon_small.png)
 
 # **Article Generator**
 
