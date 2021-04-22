@@ -3,7 +3,7 @@
 # **Article Generator**
 
 <br>
-Article Generator is a tool for creating realistic news posts fora varity of uses. from fictional worlds, to trolling the internet, this tool is designed to create high quality headlines in the style of major news outlets.
+Article Generator is a tool for creating realistic news posts for a varity of uses. from fictional worlds, to trolling the internet, this tool is designed to create high quality headlines in the style of major news outlets.
 
 \
 Version 1.0 release includes the following features:
