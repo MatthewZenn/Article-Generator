@@ -1,5 +1,5 @@
 <img src="icon.png"
-     style="float: left; margin-right: 10px; width: 5%" />
+     style="float: left; margin-right: 10px; width: 1%" />
 
 <p style="font-weight: bold; font-size: 30pt">Article Generator</p>
 <br>
