@@ -13,6 +13,5 @@ app.on('ready', function(){
         pathname: path.join(__dirname, 'mainWindow.html'),
         protocol: 'file:',
         slashes: true
-        dsfjakdfsjkldklsfjkladsjldfsjkldfjklsjkadfsjdklsjkdfsjkldfsjkldjkldjkladfsjkladsjkl;dfsjkl;dfsjkldskl;afjkldjkls
     }));
 });
