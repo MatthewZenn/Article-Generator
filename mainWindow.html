@@ -8,15 +8,17 @@
     <body>
         <h1 class="name">Article Generator</h1>
         <input type="file" hidden="hidden" id="picture" accept="image/*">
+        <input type="file" hidden="hidden" id="background-image" accept="image/*">
         <button type="button" class="open" id="open"><i class="fa fa-folder-open"></i> Open Image</button>
         <input class="title" type="text" placeholder="Title" id="title">
-        <button onclick="" class="source-btn"><i class="fa fa-newspaper-o"></i> Change News</button>
+        <button onclick="changeSource()" class="source-btn">Change News</button>
+        <button id="custom" class="custom"><i class="fa fa-newspaper-o"></i></button>
         <button class="btn" onclick="printresult()"><i class="fa fa-download"></i> Download</button>
         <button onclick="textinput()" class="btn2"><i class="fa fa-refresh"></i> Update</button>
         <button class="reload" onclick="window.location.reload(false)"><i class="fa fa-undo"></i></button>
         <div id="result" class="window">
             <div class="container">
-                <a href="#"></a><img src="news.png" id="background"></a>
+                <img src="news.png" id="background">
             </div>
             <img id="image" class="image" src="">
             <div class="box1">
