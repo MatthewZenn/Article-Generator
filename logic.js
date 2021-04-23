@@ -9,10 +9,17 @@ let outlets = ["news.png", "news2.png", "news3.png"]
 
 Index = 1;
 
+/**
+ * Maps the button for selecting an image to include in the generated article.
+ */
 fakeButton.addEventListener("click", function() {
     realButton.click()
 });
 
+
+/**
+ * Handler for selecting an image to include in the generated article.
+ */
 realButton.addEventListener("change", function() {
     const file = this.files[0];
 
@@ -26,10 +33,16 @@ realButton.addEventListener("change", function() {
     }
 });
 
+/**
+ * Creates a mapping to the button that allows selection of a background image for the generated article.
+ */
 fakeButton2.addEventListener("click", function() {
     realButton2.click()
 });
 
+/**
+ * Performs mapping for button to change the background image of the generated article.
+ */
 realButton2.addEventListener("change", function() {
     const file2 = this.files[0];
 
@@ -43,11 +56,17 @@ realButton2.addEventListener("change", function() {
     }
 });
 
+/**
+ * Sets the article title to whatever was entered into the 'title' field by the user.
+ */
 function textinput() {
     var title = (document.getElementById("title").value);
     document.getElementById("output1").innerHTML = title;
 }
 
+/**
+ * Exports the generated article as a PNG file. The user will be prompted with a save window to select a save file target.
+ */
 function printresult() {
     html2canvas(document.querySelector("#result")).then(canvas => {
         document.body.appendChild(canvas).style.visibility = "hidden";
@@ -55,6 +74,9 @@ function printresult() {
     });
 }
 
+/**
+ * Cycles the background image between 3 preset images, or any that are uploaded by the user.
+ */
 function changeSource()  {
     if (Index < outlets.length-1) {
         Index++;
