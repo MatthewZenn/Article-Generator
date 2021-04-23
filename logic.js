@@ -22,9 +22,7 @@ realButton.addEventListener("change", function() {
 
 function textinput() {
     var title = (document.getElementById("title").value);
-    var caption = (document.getElementById("caption").value);
     document.getElementById("output1").innerHTML = title;
-    document.getElementById("output2").innerHTML = caption;
 }
 
 function printresult() {
