@@ -61,6 +61,7 @@ function changeSource()  {
         Index++;
      }
      else {
-        Index = 0;   
+        Index = 0;
+        backgroundImage.setAttribute('src', outlets[Index]);
      }
 }
