@@ -86,4 +86,5 @@ function changeSource()  {
         Index = 0;
      }
      backgroundImage.setAttribute('src', outlets[Index]);
+     document.documentElement.setAttribute('data-theme', styles[Index])
 }

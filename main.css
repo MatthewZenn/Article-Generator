@@ -1,4 +1,4 @@
-[data-theme="cnn"] {
+:root {
     --font-family: Arial;
     --text-align: left;
     --text-position: 0%;
@@ -8,14 +8,14 @@
 [data-theme="onion"] {
     --font-family: Times;
     --text-align: center;
-    --text-position: 75%;
+    --text-position: 55%;
     --text-margin: 11%;
 }
 
 [data-theme="fox"] {
-    --font-family: Times;
+    --font-family: Arial;
     --text-align: center;
-    --text-position: 85%;
+    --text-position: 70%;
     --text-margin: 11%;
 }
 
@@ -89,15 +89,15 @@ body, html {
     height: auto;
     background: transparent;
     position: absolute;
-    text-align: left;
-    left: 5%;
-    top: var(--text-postion);
+    text-align: var(--text-align);
+    left: var(--text-margin);
+    top: var(--text-position);
 }
 
 .title-text {
     background: transparent;
     display: inline-block;
-    font-family: Arial;
+    font-family: var(--font-family);
     font-weight: 500;
     color: rgb(255, 255, 255);
     font-size: 26pt;
