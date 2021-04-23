@@ -1,9 +1,22 @@
 [data-theme="cnn"] {
     --font-family: Arial;
+    --text-align: left;
+    --text-position: 0%;
+    --text-margin: 5%;
 }
 
 [data-theme="onion"] {
     --font-family: Times;
+    --text-align: center;
+    --text-position: 75%;
+    --text-margin: 11%;
+}
+
+[data-theme="fox"] {
+    --font-family: Times;
+    --text-align: center;
+    --text-position: 85%;
+    --text-margin: 11%;
 }
 
 body, html {
@@ -78,6 +91,7 @@ body, html {
     position: absolute;
     text-align: left;
     left: 5%;
+    top: var(--text-postion);
 }
 
 .title-text {
@@ -87,24 +101,6 @@ body, html {
     font-weight: 500;
     color: rgb(255, 255, 255);
     font-size: 26pt;
-    font-weight: bold;
-}
-
-.box2 {
-    max-width: 78%;
-    margin: auto;
-    height: auto;
-    background: transparent;
-    position: absolute;
-    left: 11%;
-    top: 80%;
-}
-
-.cap-text {
-    display: inline-block;
-    font-family: Arial;
-    color: black;
-    font-size: 14pt;
     font-weight: bold;
 }
 
