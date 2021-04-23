@@ -56,12 +56,11 @@ function printresult() {
 }
 
 function changeSource()  {
-    if (Index < outlets.length) {
-        backgroundImage.setAttribute('src', outlets[Index]);
+    if (Index < outlets.length-1) {
         Index++;
      }
      else {
         Index = 0;
-        backgroundImage.setAttribute('src', outlets[Index]);
      }
+     backgroundImage.setAttribute('src', outlets[Index]);
 }
