@@ -5,14 +5,19 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . Article-Generator --out=dist --platform=linux --arch=x64 --icon=icon.png"
+    "build": "electron-packager . Article-Generator --out=dist --platform=linux --arch=x64 --icon=icon.png",
+    "test": "mocha",
+    "docs": "jsdoc logic.js"
   },
   "author": "Matthew Zenn",
   "license": "MIT",
   "dependencies": {
-    "electron": "^7.1.1"
+    "electron": "^7.1.1",
+    "jsdoc": "^3.6.6"
   },
   "devDependencies": {
-    "electron-packager": "^14.1.0"
+    "electron-packager": "^14.1.0",
+    "mocha": "^8.3.2",
+    "spectron": "^9.0.0"
   }
 }
