@@ -13,9 +13,9 @@
 }
 
 [data-theme="fox"] {
-    --font-family: Arial;
+    --font-family: Helvetica;
     --text-align: center;
-    --text-position: 70%;
+    --text-position: 0%;
     --text-margin: 11%;
 }
 
