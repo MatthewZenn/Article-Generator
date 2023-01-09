@@ -209,10 +209,29 @@ body, html {
     border: 1px solid grey;
 }
 
+.invert {
+    position: absolute;
+    right: 135px;
+    top: 68%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: rgb(32, 32, 32);
+    width: 50px;
+    height: 50px;
+    font-family: 'Trebuchet MS';
+    font-size: 18pt;
+    color: white;
+}
+
+.invert:hover {
+    color: grey;
+}
+
 .reload {
     position: absolute;
     right: 75px;
-    top: 70%;
+    top: 68%;
     border: none;
     outline: none;
     border-radius: 10px;

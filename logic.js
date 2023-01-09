@@ -7,6 +7,7 @@ const fakeButton2 = document.getElementById("custom");
 const backgroundImage = document.getElementById("background");
 let outlets = ["news.png", "news2.png", "news3.png"]
 let styles = ["cnn", "onion", "fox"]
+var count = 0;
 
 Index = 1;
 
@@ -87,4 +88,15 @@ function changeSource()  {
      }
      backgroundImage.setAttribute('src', outlets[Index]);
      document.documentElement.setAttribute('data-theme', styles[Index])
+}
+
+function invert() {
+    if (count == 0) {
+        image.style.filter = "grayscale(100%)";
+        count = 1;
+    }
+    else {
+        image.style.filter = "none";
+        count = 0;
+    }
 }
