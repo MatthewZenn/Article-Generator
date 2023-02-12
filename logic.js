@@ -5,7 +5,6 @@ const image = document.getElementById("image");
 const realButton2 = document.getElementById("background-image");
 const fakeButton2 = document.getElementById("custom");
 const backgroundImage = document.getElementById("background");
-let outlets = ["news.png", "news2.png", "news3.png"]
 let styles = ["cnn", "onion", "fox"]
 var count = 0;
 
@@ -80,23 +79,20 @@ function printresult() {
  * Cycles the background image between 3 preset images, or any that are uploaded by the user.
  */
 function changeSource()  {
-    if (Index < outlets.length-1) {
-        Index++;
-     }
-     else {
-        Index = 0;
-     }
-     backgroundImage.setAttribute('src', outlets[Index]);
-     document.documentElement.setAttribute('data-theme', styles[Index])
+    var index = document.getElementById("sources");
+    backgroundImage.setAttribute('src', index.value + ".png");
+    document.documentElement.setAttribute('data-theme', index.value)
 }
 
 function invert() {
     if (count == 0) {
         image.style.filter = "grayscale(100%)";
+        document.getElementById("invert").style.color = 'grey';
         count = 1;
     }
     else {
         image.style.filter = "none";
+        document.getElementById("invert").style.color = 'white';
         count = 0;
     }
 }
