@@ -9,22 +9,24 @@
         <h1 class="name">Article Generator</h1>
         <input type="file" hidden="hidden" id="picture" accept="image/*">
         <input type="file" hidden="hidden" id="background-image" accept="image/*">
-        <button type="button" class="open" id="open"><i class="fa fa-folder-open"></i> Open Image</button>
         <input class="title" type="text" placeholder="Title" id="title">
         <select name="outlets" class="source-btn" id="sources" onchange="changeSource()">
             <option value="1">CNN</option>
             <option value="2">Onion</option>
             <option value="3">Ministry</option>
             <option value="4">RedPill</option>
-          </select>
+            <option value="5">Bee</option>
+        </select>
+        <div class="toolbox">
+            <button type="button" class="open" id="open"><i class="fa fa-image"></i></button>
+            <button class="invert" id="invert" onclick="invert()"><i class="fa fa-adjust"></i></button>
+            <button class="btn" onclick="printresult()"><i class="fa fa-download"></i></button>
+            <button class="reload" onclick="window.location.reload(false)"><img class="re-icon" src="icon_small.png" alt=""></i></button>
+        </div>
         <button id="custom" class="custom"><i class="fa fa-newspaper-o"></i></button>
-        <button class="btn" onclick="printresult()"><i class="fa fa-download"></i> Download</button>
-        <button onclick="textinput()" class="btn2"><i class="fa fa-refresh"></i> Update</button>
-        <button class="invert" id="invert" onclick="invert()"><i class="fa fa-dot-circle-o"></i></button>
-        <button class="reload" onclick="window.location.reload(false)"><i class="fa fa-undo"></i></button>
         <div id="result" class="window">
             <div class="container">
-                <img src="news.png" id="background">
+                <img src="1.png" id="background">
             </div>
             <img id="image" class="image" src="">
             <div class="box1">

@@ -4,6 +4,7 @@
     --text-position: 0%;
     --text-margin: 5%;
     --font-wheight: bold;
+    --color: white;
 }
 
 [data-theme="1"]{
@@ -12,6 +13,7 @@
     --text-position: 0%;
     --text-margin: 5%;
     --font-wheight: bold;
+    --color: white;
 }
 
 [data-theme="2"] {
@@ -20,6 +22,7 @@
     --text-position: 55%;
     --text-margin: 11%;
     --font-wheight: bold;
+    --color: white;
 }
 
 [data-theme="3"] {
@@ -28,6 +31,7 @@
     --text-position: 0%;
     --text-margin: 11%;
     --font-wheight: bold;
+    --color: white;
 }
 
 [data-theme="4"] {
@@ -36,15 +40,19 @@
     --text-position: 60%;
     --text-margin: 11%;
     --font-wheight: bold;
+    --color: white;
+}
+
+[data-theme="5"] {
+    --font-family: Times;
+    --text-align: center;
+    --text-position: 60%;
+    --text-margin: 11%;
+    --font-wheight: bold;
+    --color: black;
 }
 
 body, html {
-    background-image: url(image.png);
-    color: grey;
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position:50% 50%;
     background-color: rgb(20, 20, 20);
 }
 
@@ -58,13 +66,13 @@ body, html {
 
 .open {
     position: absolute;
-    right: 75px;
-    top: 25%;
+    left: 5px;
+    top: 10%;
     border: none;
     outline: none;
     border-radius: 10px;
-    background: rgb(32, 32, 32);
-    width: 300px;
+    background: none;
+    width: 50px;
     height: 50px;
     font-family: 'Trebuchet MS';
     font-size: 18pt;
@@ -77,8 +85,8 @@ body, html {
 
 .title {
     position: absolute;
-    right: 75px;
-    top: 40%;
+    left: 75px;
+    top: 10%;
     border:none;
     outline: none;
     border-bottom: solid gray 1px;
@@ -117,21 +125,20 @@ body, html {
     background: transparent;
     display: inline-block;
     font-family: var(--font-family);
-    font-weight: 500;
-    color: rgb(255, 255, 255);
+    color: var(--color);
     font-size: 26pt;
     font-weight: var(--font-wheight);
 }
 
 .btn {
     position: absolute;
-    left: 275px;
-    top: 85%;
+    left: 5px;
+    top: 20%;
     border: none;
     outline: none;
     border-radius: 10px;
-    background: rgb(32, 32, 32);
-    width: 300px;
+    background: none;
+    width: 50px;
     height: 50px;
     font-family: 'Trebuchet MS';
     font-size: 18pt;
@@ -142,33 +149,14 @@ body, html {
     color: grey;
 }
 
-.btn2 {
-    position: absolute;
-    right: 75px;
-    top: 60%;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    background: rgb(32, 32, 32);
-    width: 300px;
-    height: 50px;
-    font-family: 'Trebuchet MS';
-    font-size: 18pt;
-    color: white;
-}
-
-.btn2:hover {
-    color: grey;
-}
-
 .source-btn {
     position: absolute;
-    right: 75px;
-    top: 50%;
+    left: 125px;
+    top: 15%;
     border: none;
     outline: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     background: rgb(32, 32, 32);
     width: 250px;
     height: 50px;
@@ -178,28 +166,25 @@ body, html {
 }
 
 .source-btn:hover {
+    cursor: pointer;
     color: grey;
 }
 
 .custom {
     position: absolute;
-    right: 325px;
-    top: 50%;
+    left: 75px;
+    top: 15%;
     border: none;
     border-right: 1px solid rgb(60, 60, 60);
     outline: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     background: rgb(32, 32, 32);
     width: 50px;
     height: 50px;
     font-family: 'Trebuchet MS';
     font-size: 18pt;
     color: white;
-}
-
-.custom:hover {
-    color: grey;
 }
 
 .image {
@@ -214,8 +199,8 @@ body, html {
     margin: 0;
     color: rgb(49, 49, 49);
     font-family: Arial;
-    float: left;
     position: absolute;
+    right: 2px;
     bottom: 2px;
 }
 
@@ -223,19 +208,21 @@ body, html {
     height: 7in;
     width: 7in;
     position: fixed;
-    left: 100px;
-    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
     border: 1px solid grey;
+    background-color: transparent;
 }
 
 .invert {
     position: absolute;
-    right: 135px;
-    top: 68%;
+    left: 5px;
+    top: 15%;
     border: none;
     outline: none;
     border-radius: 10px;
-    background: rgb(32, 32, 32);
+    background: none;
     width: 50px;
     height: 50px;
     font-family: 'Trebuchet MS';
@@ -250,12 +237,12 @@ body, html {
 
 .reload {
     position: absolute;
-    right: 75px;
-    top: 68%;
+    left: 5px;
+    top: 10px;
     border: none;
     outline: none;
-    border-radius: 10px;
-    background: rgb(32, 32, 32);
+    border-radius: 5px;
+    background: none;
     width: 50px;
     height: 50px;
     font-family: 'Trebuchet MS';
@@ -264,5 +251,20 @@ body, html {
 }
 
 .reload:hover {
-    color: orangered;
+    cursor: pointer;
+    background-color: rgb(32, 32, 32);
+}
+
+.toolbox {
+    width: 60px;
+    background-color: rgb(20, 20, 20);
+    border-right: 1px solid rgb(32, 32, 32);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.re-icon {
+    width: 100%;
 }

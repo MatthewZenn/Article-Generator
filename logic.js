@@ -60,10 +60,10 @@ realButton2.addEventListener("change", function() {
 /**
  * Sets the article title to whatever was entered into the 'title' field by the user.
  */
-function textinput() {
+document.getElementById('title').addEventListener('change', () => {
     var title = (document.getElementById("title").value);
     document.getElementById("output1").innerHTML = title;
-}
+});
 
 /**
  * Exports the generated article as a PNG file. The user will be prompted with a save window to select a save file target.
