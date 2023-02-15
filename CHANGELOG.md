@@ -14,3 +14,8 @@
 <li>Replaced outlet cycling with a dropdown menu</li>
 <li>Added the Babylon Bee, Ministry of Truth, and Redpill outlets</li>
 <li>Addded first tool - a B/W filter toggle for the background image</li>
+
+# Version 1.3.1
+<li>Rebranded with different colors</li>
+<li>Switched to google icons</li>
+<li>Added copy text button</li>

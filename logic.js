@@ -5,7 +5,6 @@ const image = document.getElementById("image");
 const realButton2 = document.getElementById("background-image");
 const fakeButton2 = document.getElementById("custom");
 const backgroundImage = document.getElementById("background");
-let styles = ["cnn", "onion", "fox"]
 var count = 0;
 
 Index = 1;
@@ -87,12 +86,17 @@ function changeSource()  {
 function invert() {
     if (count == 0) {
         image.style.filter = "grayscale(100%)";
-        document.getElementById("invert").style.color = 'grey';
+        document.getElementById("invert").style.color = 'rgb(177, 103, 255)';
         count = 1;
     }
     else {
         image.style.filter = "none";
-        document.getElementById("invert").style.color = 'white';
+        document.getElementById("invert").style.color = 'grey';
         count = 0;
     }
+}
+
+function copyText() {
+    document.getElementById("title").select();
+    document.execCommand('copy',false);
 }

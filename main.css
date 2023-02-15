@@ -56,31 +56,24 @@ body, html {
     background-color: rgb(20, 20, 20);
 }
 
-.name {
-    text-align: center;
-    font-family: 'Helvetica';
-    font-weight: lighter;
-    color: white;
-    font-size: 30pt;
-}
-
 .open {
     position: absolute;
     left: 5px;
     top: 10%;
     border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 5px;
     background: none;
     width: 50px;
     height: 50px;
     font-family: 'Trebuchet MS';
-    font-size: 18pt;
-    color: white;
+    font-size: 20pt;
+    color: grey;
 }
 
 .open:hover {
-    color: grey;
+    cursor: pointer;
+    background-color: rgb(32, 32, 32);
 }
 
 .title {
@@ -133,20 +126,21 @@ body, html {
 .btn {
     position: absolute;
     left: 5px;
-    top: 20%;
+    top: 25%;
     border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 5px;
     background: none;
     width: 50px;
     height: 50px;
     font-family: 'Trebuchet MS';
-    font-size: 18pt;
-    color: white;
+    font-size: 20pt;
+    color: grey;
 }
 
 .btn:hover{
-    color: grey;
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
 }
 
 .source-btn {
@@ -163,6 +157,9 @@ body, html {
     font-family: 'Trebuchet MS';
     font-size: 18pt;
     color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .source-btn:hover {
@@ -175,7 +172,6 @@ body, html {
     left: 75px;
     top: 15%;
     border: none;
-    border-right: 1px solid rgb(60, 60, 60);
     outline: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -197,7 +193,7 @@ body, html {
 
 .claim {
     margin: 0;
-    color: rgb(49, 49, 49);
+    color: rgb(56, 56, 56);
     font-family: Arial;
     position: absolute;
     right: 2px;
@@ -221,17 +217,37 @@ body, html {
     top: 15%;
     border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 5px;
     background: none;
     width: 50px;
     height: 50px;
     font-family: 'Trebuchet MS';
-    font-size: 18pt;
-    color: white;
+    font-size: 20pt;
+    color: grey;
 }
 
 .invert:hover {
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
+}
+
+.copy {
+    position: absolute;
+    left: 5px;
+    top: 20%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: none;
+    width: 50px;
+    height: 50px;
+    font-family: 'Trebuchet MS';
+    font-size: 20pt;
     color: grey;
+}
+
+.copy:hover {
+    background-color: rgb(32, 32, 32);
     cursor: pointer;
 }
 

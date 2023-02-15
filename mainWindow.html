@@ -4,26 +4,27 @@
         <title>Article Generator</title>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     </head>
     <body>
-        <h1 class="name">Article Generator</h1>
         <input type="file" hidden="hidden" id="picture" accept="image/*">
         <input type="file" hidden="hidden" id="background-image" accept="image/*">
         <input class="title" type="text" placeholder="Title" id="title">
         <select name="outlets" class="source-btn" id="sources" onchange="changeSource()">
             <option value="1">CNN</option>
-            <option value="2">Onion</option>
-            <option value="3">Ministry</option>
+            <option value="2">The Onion</option>
+            <option value="3">Ministry of Truth</option>
             <option value="4">RedPill</option>
-            <option value="5">Bee</option>
+            <option value="5">Babylon Bee</option>
         </select>
         <div class="toolbox">
-            <button type="button" class="open" id="open"><i class="fa fa-image"></i></button>
-            <button class="invert" id="invert" onclick="invert()"><i class="fa fa-adjust"></i></button>
-            <button class="btn" onclick="printresult()"><i class="fa fa-download"></i></button>
+            <button type="button" class="open" id="open"><i class="material-symbols-rounded">add_a_photo</i></button>
+            <button class="invert" id="invert" onclick="invert()"><i class="material-symbols-rounded">filter_b_and_w</i></button>
+            <button class="btn" onclick="printresult()"><i class="material-symbols-rounded">download</i></button>
+            <button class="copy" onclick="copyText()"><i class="material-symbols-rounded">content_copy</i></button>
             <button class="reload" onclick="window.location.reload(false)"><img class="re-icon" src="icon_small.png" alt=""></i></button>
         </div>
-        <button id="custom" class="custom"><i class="fa fa-newspaper-o"></i></button>
+        <button id="custom" class="custom"><i class="material-symbols-rounded">expand_more</i></button>
         <div id="result" class="window">
             <div class="container">
                 <img src="1.png" id="background">
@@ -33,7 +34,7 @@
                 <h3 class="title-text" id="output1"></h3>
             </div>
         </div>
-        <p class="claim">2021 Matthew Zenn || V-1.3</p>
+        <p class="claim">2021 Matthew Zenn || V-1.3.1</p>
         <script src="html2canvas.min.js"></script>
         <script src="canvas2image.js"></script>
         <script src="logic.js"></script>
