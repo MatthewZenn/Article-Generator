@@ -8,7 +8,6 @@
     </head>
     <body>
         <input type="file" hidden="hidden" id="picture" accept="image/*">
-        <input type="file" hidden="hidden" id="background-image" accept="image/*">
         <input class="title" type="text" placeholder="Title" id="title">
         <select name="outlets" class="source-btn" id="sources" onchange="changeSource()">
             <option value="1">CNN</option>
@@ -24,17 +23,17 @@
             <button class="copy" onclick="copyText()"><i class="material-symbols-rounded">content_copy</i></button>
             <button class="reload" onclick="window.location.reload(false)"><img class="re-icon" src="icon_small.png" alt=""></i></button>
         </div>
-        <button id="custom" class="custom"><i class="material-symbols-rounded">expand_more</i></button>
+        <button class="custom"><i class="material-symbols-rounded">expand_more</i></button>
         <div id="result" class="window">
             <div class="container">
                 <img src="1.png" id="background">
             </div>
-            <img id="image" class="image" src="">
+            <img id="image" class="image" src="empty.png">
             <div class="box1">
                 <h3 class="title-text" id="output1"></h3>
             </div>
         </div>
-        <p class="claim">2021 Matthew Zenn || V-1.3.1</p>
+        <p class="claim">2021 Matthew Zenn || V-2.1.1</p>
         <script src="html2canvas.min.js"></script>
         <script src="canvas2image.js"></script>
         <script src="logic.js"></script>

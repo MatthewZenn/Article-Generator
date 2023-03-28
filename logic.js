@@ -1,9 +1,6 @@
 const realButton = document.getElementById("picture");
 const fakeButton = document.getElementById("open");
 const image = document.getElementById("image");
-
-const realButton2 = document.getElementById("background-image");
-const fakeButton2 = document.getElementById("custom");
 const backgroundImage = document.getElementById("background");
 var count = 0;
 
@@ -30,29 +27,6 @@ realButton.addEventListener("change", function() {
             image.setAttribute('src', this.result);
         });
         reader.readAsDataURL(file);
-    }
-});
-
-/**
- * Creates a mapping to the button that allows selection of a background image for the generated article.
- */
-fakeButton2.addEventListener("click", function() {
-    realButton2.click()
-});
-
-/**
- * Performs mapping for button to change the background image of the generated article.
- */
-realButton2.addEventListener("change", function() {
-    const file2 = this.files[0];
-
-    if (file2) {
-        const reader2 = new FileReader();
-
-        reader2.addEventListener("load", function() {
-            backgroundImage.setAttribute('src', this.result);
-        });
-        reader2.readAsDataURL(file2);
     }
 });
 
