@@ -3,8 +3,8 @@
     <head>
         <title>Article Generator</title>
         <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="icon" href="Assets/icon.ico" type="image/x-icon">
     </head>
     <body>
         <input type="file" hidden="hidden" id="picture" accept="image/*">
@@ -21,14 +21,14 @@
             <button class="invert" id="invert" onclick="invert()"><i class="material-symbols-rounded">filter_b_and_w</i></button>
             <button class="btn" onclick="printresult()"><i class="material-symbols-rounded">download</i></button>
             <button class="copy" onclick="copyText()"><i class="material-symbols-rounded">content_copy</i></button>
-            <button class="reload" onclick="window.location.reload(false)"><img class="re-icon" src="icon_small.png" alt=""></i></button>
+            <button class="reload" onclick="window.location.reload(false)"><img class="re-icon" src="Assets/icon_small.png" alt=""></i></button>
         </div>
         <button class="custom"><i class="material-symbols-rounded">expand_more</i></button>
         <div id="result" class="window">
             <div class="container">
-                <img src="1.png" id="background">
+                <img src="Pages/1.png" id="background">
             </div>
-            <img id="image" class="image" src="empty.png">
+            <img id="image" class="image" src="Assets/empty.png">
             <div class="box1">
                 <h3 class="title-text" id="output1"></h3>
             </div>

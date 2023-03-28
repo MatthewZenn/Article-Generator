@@ -53,7 +53,7 @@ function printresult() {
  */
 function changeSource()  {
     var index = document.getElementById("sources");
-    backgroundImage.setAttribute('src', index.value + ".png");
+    backgroundImage.setAttribute('src', "Pages/" + index.value + ".png");
     document.documentElement.setAttribute('data-theme', index.value)
 }
 

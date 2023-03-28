@@ -19,3 +19,6 @@
 <li>Rebranded with different colors</li>
 <li>Switched to google icons</li>
 <li>Added copy text button</li>
+
+# Version 2.0
+<li>Removed Node</li>
