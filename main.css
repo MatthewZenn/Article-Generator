@@ -73,7 +73,7 @@ body, html {
 
 .open:hover {
     cursor: pointer;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(20, 20, 20);
 }
 
 .title {
@@ -139,7 +139,7 @@ body, html {
 }
 
 .btn:hover{
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(20, 20, 20);
     cursor: pointer;
 }
 
@@ -207,8 +207,11 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     top: 50%;
-    border: 1px solid grey;
-    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(12, 12, 12);
+    overflow: auto;
+    box-shadow: 10px 10px 20px #0e0e0e;
 }
 
 .invert {
@@ -227,7 +230,7 @@ body, html {
 }
 
 .invert:hover {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(20, 20, 20);
     cursor: pointer;
 }
 
@@ -247,7 +250,7 @@ body, html {
 }
 
 .copy:hover {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(20, 20, 20);
     cursor: pointer;
 }
 
@@ -268,12 +271,12 @@ body, html {
 
 .reload:hover {
     cursor: pointer;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(20, 20, 20);
 }
 
 .toolbox {
     width: 60px;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(12, 12, 12);
     border-right: 1px solid rgb(32, 32, 32);
     position: absolute;
     left: 0;
