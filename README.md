@@ -1,4 +1,4 @@
-![alt text](icon_small.png)
+![alt text](Assets/icon_small.png)
 
 # **Article Generator**
 
