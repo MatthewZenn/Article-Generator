@@ -1,0 +1,14 @@
+{
+  "name": "article-generator",
+  "version": "1.0.0",
+  "description": "article generator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Matthew Zenn",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^28.2.2"
+  }
+}

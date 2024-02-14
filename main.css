@@ -52,8 +52,44 @@
     --color: black;
 }
 
+@font-face {
+  font-family: SegoeIcons;
+  src:url("Assets/Segoe Fluent Icons.ttf");
+}
+
 body, html {
     background-color: rgb(20, 20, 20);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  -webkit-app-region: drag;
+  z-index: -1;
+}
+
+#exit {
+  position: absolute;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  font-family: SegoeIcons;
+  color: white;
+  font-size: 12pt;
+  z-index: 1;
+  -webkit-app-region: no-drag;
+  background-color: transparent;
+  border: none;
+}
+
+#exit:hover {
+  background-color: rgb(255, 42, 60);
+  cursor: pointer;
 }
 
 .open {
@@ -115,175 +151,137 @@ body, html {
 }
 
 .title-text {
-    background: transparent;
-    display: inline-block;
-    font-family: var(--font-family);
-    color: var(--color);
-    font-size: 26pt;
-    font-weight: var(--font-wheight);
+  background: transparent;
+  display: inline-block;
+  font-family: var(--font-family);
+  color: var(--color);
+  font-size: 26pt;
+  font-weight: var(--font-wheight);
 }
 
-.btn {
-    position: absolute;
-    left: 5px;
-    top: 25%;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    background: none;
-    width: 50px;
-    height: 50px;
-    font-family: 'Trebuchet MS';
-    font-size: 20pt;
-    color: grey;
+.tool-btn {
+  position: relative;
+  left: 5px;
+  top: 70px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: none;
+  width: 50px;
+  height: 50px;
+  font-family: 'Trebuchet MS';
+  font-size: 20pt;
+  color: grey;
+  margin-bottom: 10px;
 }
 
-.btn:hover{
-    background-color: rgb(20, 20, 20);
-    cursor: pointer;
+.tool-btn:hover{
+  background-color: rgb(20, 20, 20);
+  cursor: pointer;
 }
 
 .source-btn {
-    position: absolute;
-    left: 125px;
-    top: 15%;
-    border: none;
-    outline: none;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background: rgb(32, 32, 32);
-    width: 250px;
-    height: 50px;
-    font-family: 'Trebuchet MS';
-    font-size: 18pt;
-    color: white;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  position: absolute;
+  left: 125px;
+  top: 15%;
+  border: none;
+  outline: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: rgb(32, 32, 32);
+  width: 250px;
+  height: 50px;
+  font-family: 'Trebuchet MS';
+  font-size: 18pt;
+  color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .source-btn:hover {
-    cursor: pointer;
-    color: grey;
+  cursor: pointer;
+  color: grey;
 }
 
 .custom {
-    position: absolute;
-    left: 75px;
-    top: 15%;
-    border: none;
-    outline: none;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    background: rgb(32, 32, 32);
-    width: 50px;
-    height: 50px;
-    font-family: 'Trebuchet MS';
-    font-size: 18pt;
-    color: white;
+  position: absolute;
+  left: 75px;
+  top: 15%;
+  border: none;
+  outline: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: rgb(32, 32, 32);
+  width: 50px;
+  height: 50px;
+  font-family: 'Trebuchet MS';
+  font-size: 18pt;
+  color: white;
 }
 
 .image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .claim {
-    margin: 0;
-    color: rgb(56, 56, 56);
-    font-family: Arial;
-    position: absolute;
-    right: 2px;
-    bottom: 2px;
+  margin: 0;
+  color: rgb(56, 56, 56);
+  font-family: Arial;
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
 }
 
 .window {
-    height: 7in;
-    width: 7in;
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(12, 12, 12);
-    overflow: auto;
-    box-shadow: 10px 10px 20px #0e0e0e;
-    overflow: hidden;
-}
-
-.invert {
-    position: absolute;
-    left: 5px;
-    top: 15%;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    background: none;
-    width: 50px;
-    height: 50px;
-    font-family: 'Trebuchet MS';
-    font-size: 20pt;
-    color: grey;
-}
-
-.invert:hover {
-    background-color: rgb(20, 20, 20);
-    cursor: pointer;
-}
-
-.copy {
-    position: absolute;
-    left: 5px;
-    top: 20%;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    background: none;
-    width: 50px;
-    height: 50px;
-    font-family: 'Trebuchet MS';
-    font-size: 20pt;
-    color: grey;
-}
-
-.copy:hover {
-    background-color: rgb(20, 20, 20);
-    cursor: pointer;
+  height: 7in;
+  width: 7in;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(12, 12, 12);
+  overflow: auto;
+  box-shadow: 10px 10px 20px #0e0e0e;
+  overflow: hidden;
 }
 
 .reload {
-    position: absolute;
-    left: 5px;
-    top: 10px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    background: none;
-    width: 50px;
-    height: 50px;
-    font-family: 'Trebuchet MS';
-    font-size: 18pt;
-    color: white;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: none;
+  width: 50px;
+  height: 50px;
+  font-family: 'Trebuchet MS';
+  font-size: 18pt;
+  color: white;
 }
 
 .reload:hover {
-    cursor: pointer;
-    background-color: rgb(20, 20, 20);
+  cursor: pointer;
+  background-color: rgb(20, 20, 20);
 }
 
 .toolbox {
-    width: 60px;
-    background-color: rgb(12, 12, 12);
-    border-right: 1px solid rgb(32, 32, 32);
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
+  width: 60px;
+  background-color: rgb(12, 12, 12);
+  border-right: 1px solid rgb(32, 32, 32);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: block;
 }
 
 .re-icon {
-    width: 100%;
+  width: 100%;
 }

@@ -38,6 +38,10 @@ document.getElementById('title').addEventListener('change', () => {
     document.getElementById("output1").innerHTML = title;
 });
 
+document.getElementById('exit').addEventListener('click', () => {
+  window.close();
+});
+
 /**
  * Exports the generated article as a PNG file. The user will be prompted with a save window to select a save file target.
  */
