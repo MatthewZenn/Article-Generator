@@ -8,7 +8,7 @@ Menu.setApplicationMenu(null);
 let mainWindow;
 
 app.on('ready', function(){
-    mainWindow = new BrowserWindow({width: 1600, height: 900, resizable: false, frame: false, icon: "Static/Logo.ico"});
+    mainWindow = new BrowserWindow({width: 1280, height: 792, resizable: false, frame: false, icon: "Assets/icon.ico"});
     mainWindow.loadURL(url.format({
         pathname: path.join(__dirname, 'mainWindow.html'),
         protocol: 'file:',
