@@ -37,9 +37,9 @@
 [data-theme="4"] {
   --font-family: Times;
   --text-align: center;
-  --text-position: 60%;
+  --text-position: 0%;
   --text-margin: 11%;
-  --font-wheight: bold;
+  --font-wheight: 300;
   --color: white;
 }
 
