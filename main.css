@@ -37,7 +37,7 @@
 [data-theme="4"] {
   --font-family: Times;
   --text-align: center;
-  --text-position: 0%;
+  --text-position: 65%;
   --text-margin: 11%;
   --font-wheight: 300;
   --color: white;
@@ -50,6 +50,15 @@
   --text-margin: 11%;
   --font-wheight: bold;
   --color: black;
+}
+
+[data-theme="6"] {
+  --font-family: Times;
+  --text-align: center;
+  --text-position: 0%;
+  --text-margin: 11%;
+  --font-wheight: 500;
+  --color: white;
 }
 
 @font-face {
