@@ -61,6 +61,15 @@
   --color: white;
 }
 
+[data-theme="7"] {
+  --font-family: Impact;
+  --text-align: center;
+  --text-position: 55%;
+  --text-margin: 11%;
+  --font-wheight: 500;
+  --color: black;
+}
+
 @font-face {
   font-family: SegoeIcons;
   src:url("Assets/Segoe Fluent Icons.ttf");
