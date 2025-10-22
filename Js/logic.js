@@ -42,9 +42,11 @@ document.getElementById('title').addEventListener('change', () => {
  * Exports the generated article as a PNG file. The user will be prompted with a save window to select a save file target.
  */
 function printresult() {
-  html2canvas(document.querySelector("#result")).then(canvas => {
+  html2canvas(document.querySelector("#result"), {
+    width: 800,
+    height: 800}).then(canvas => {
     document.body.appendChild(canvas).style.visibility = "hidden";
-    Canvas2Image.saveAsPNG(canvas, 1024, 1024);
+    Canvas2Image.saveAsJPEG(canvas, 800, 800);
   });
 }
 

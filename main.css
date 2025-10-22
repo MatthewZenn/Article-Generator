@@ -46,10 +46,10 @@
 [data-theme="5"] {
   --font-family: Times;
   --text-align: center;
-  --text-position: 60%;
+  --text-position: 0%;
   --text-margin: 11%;
-  --font-wheight: bold;
-  --color: black;
+  --font-wheight: 500;
+  --color: #dacd7d;
 }
 
 [data-theme="6"] {
@@ -236,8 +236,8 @@ header {
 }
 
 .window {
-  height: 7in;
-  width: 7in;
+  height: 800px;
+  width: 800px;
   position: fixed;
   left: 65%;
   transform: translate(-50%, -50%);
