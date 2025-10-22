@@ -28,7 +28,7 @@
 [data-theme="3"] {
   --font-family: Helvetica;
   --text-align: center;
-  --text-position: 0%;
+  --text-position: 60%;
   --text-margin: 11%;
   --font-wheight: bold;
   --color: white;
@@ -90,26 +90,6 @@ header {
   z-index: -1;
 }
 
-#exit {
-  position: absolute;
-  right: 0px;
-  width: 40px;
-  height: 40px;
-  margin: 0;
-  font-family: SegoeIcons;
-  color: white;
-  font-size: 8pt;
-  z-index: 1;
-  -webkit-app-region: no-drag;
-  background-color: transparent;
-  border: none;
-}
-
-#exit:hover {
-  background-color: rgb(255, 42, 60);
-  cursor: pointer;
-}
-
 .open {
   position: absolute;
   left: 5px;
@@ -138,8 +118,8 @@ header {
   outline: none;
   border-radius: 3px;
   background: rgb(12, 12, 12);
-  width: 400px;
-  height: 150px;
+  width: 550px;
+  height: 250px;
   font-family: 'Trebuchet MS';
   font-size: 14pt;
   color: white;
@@ -202,13 +182,13 @@ header {
 .source-btn {
   position: absolute;
   left: 125px;
-  top: 32%;
+  top: 40%;
   border: none;
   outline: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   background: rgb(12, 12, 12);
-  width: 250px;
+  width: 350px;
   height: 50px;
   font-family: 'Trebuchet MS';
   font-size: 18pt;
@@ -226,7 +206,7 @@ header {
 .custom {
   position: absolute;
   left: 75px;
-  top: 32%;
+  top: 40%;
   border: none;
   outline: none;
   border-top-left-radius: 5px;

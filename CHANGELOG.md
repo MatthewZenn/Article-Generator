@@ -1,7 +1,7 @@
 # Version 1.0
-- Create CNN style posts
-- Upload cover images in a variety of formats and aspect ratios
-- Adding title text and captions
+<li>Create CNN style posts</li>
+<li>Upload cover images in a variety of formats and aspect ratios</li>
+<li>Adding title text and captions</li>
 
 # Version 1.1
 <li>Added the option to change between 3 apperances (CNN, Fox, Onion)</li>
@@ -10,7 +10,7 @@
 <li>Removed the caption field</li>
 
 # Version 1.3
-<li>Revworked UI is cleaner and expandable</li>
+<li>Reworked UI is cleaner and expandable</li>
 <li>Replaced outlet cycling with a dropdown menu</li>
 <li>Added the Babylon Bee, Ministry of Truth, and Redpill outlets</li>
 <li>Addded first tool - a B/W filter toggle for the background image</li>
@@ -22,3 +22,8 @@
 
 # Version 2.0
 <li>Removed Node</li>
+
+# Version 2.0.2
+<li>Removed Node</li>
+<li>Made changes to article styles</li>
+<li>Article Generator is now a website</li>

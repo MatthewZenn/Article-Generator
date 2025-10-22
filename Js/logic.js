@@ -38,17 +38,13 @@ document.getElementById('title').addEventListener('change', () => {
   document.getElementById("output1").innerHTML = title;
 });
 
-document.getElementById('exit').addEventListener('click', () => {
-  window.close();
-});
-
 /**
  * Exports the generated article as a PNG file. The user will be prompted with a save window to select a save file target.
  */
 function printresult() {
   html2canvas(document.querySelector("#result")).then(canvas => {
     document.body.appendChild(canvas).style.visibility = "hidden";
-    Canvas2Image.saveAsPNG(canvas, 800, 800);
+    Canvas2Image.saveAsPNG(canvas, 1024, 1024);
   });
 }
 
@@ -59,19 +55,6 @@ function changeSource()  {
   var index = document.getElementById("sources");
   backgroundImage.setAttribute('src', "Pages/" + index.value + ".png");
   document.documentElement.setAttribute('data-theme', index.value)
-}
-
-function invert() {
-  if (count == 0) {
-    image.style.filter = "grayscale(100%)";
-    document.getElementById("invert").style.color = 'rgb(177, 103, 255)';
-    count = 1;
-  }
-  else {
-    image.style.filter = "none";
-    document.getElementById("invert").style.color = 'grey';
-    count = 0;
-  }
 }
 
 function copyText() {

@@ -7,9 +7,6 @@
         <link rel="icon" href="Assets/icon.ico" type="image/x-icon">
     </head>
     <body>
-      <header>
-        <button id="exit">&#xE8BB;</button>
-      </header>
         <input type="file" hidden="hidden" id="picture" accept="image/*">
         <textarea class="title" type="text" placeholder="Caption" id="title"></textarea>
         <select name="outlets" class="source-btn" id="sources" onchange="changeSource()">
@@ -24,7 +21,6 @@
         <div class="toolbox">
           <button class="reload" onclick="window.location.reload(false)"><img class="re-icon" src="Assets/icon_small.png" alt=""></i></button>
           <button class="tool-btn" type="button" id="open"><i class="material-symbols-rounded">add_a_photo</i></button>
-          <button class="tool-btn" id="invert" onclick="invert()"><i class="material-symbols-rounded">filter_b_and_w</i></button>
           <button class="tool-btn" onclick="copyText()"><i class="material-symbols-rounded">content_copy</i></button>
           <button class="tool-btn" onclick="printresult()"><i class="material-symbols-rounded">download</i></button>
         </div>
@@ -38,9 +34,9 @@
                 <h3 class="title-text" id="output1"></h3>
             </div>
         </div>
-        <p class="claim">2021 Matthew Zenn || V-2.2.0</p>
-        <script src="html2canvas.min.js"></script>
-        <script src="canvas2image.js"></script>
-        <script src="logic.js"></script>
+        <p class="claim">2021 Matthew Zenn || V-2.0.2</p>
+        <script src="Js/html2canvas.min.js"></script>
+        <script src="Js/canvas2image.js"></script>
+        <script src="Js/logic.js"></script>
     </body>
 </html>
