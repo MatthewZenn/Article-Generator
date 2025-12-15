@@ -3,7 +3,7 @@
   --text-align: left;
   --text-position: 0%;
   --text-margin: 5%;
-  --font-wheight: bold;
+  --font-weight: bold;
   --color: white;
 }
 
@@ -12,7 +12,7 @@
   --text-align: left;
   --text-position: 0%;
   --text-margin: 5%;
-  --font-wheight: bold;
+  --font-weight: bold;
   --color: white;
 }
 
@@ -21,7 +21,7 @@
   --text-align: center;
   --text-position: 55%;
   --text-margin: 11%;
-  --font-wheight: bold;
+  --font-weight: bold;
   --color: white;
 }
 
@@ -30,7 +30,7 @@
   --text-align: center;
   --text-position: 60%;
   --text-margin: 11%;
-  --font-wheight: bold;
+  --font-weight: bold;
   --color: white;
 }
 
@@ -39,7 +39,7 @@
   --text-align: center;
   --text-position: 65%;
   --text-margin: 11%;
-  --font-wheight: 300;
+  --font-weight: 300;
   --color: white;
 }
 
@@ -48,7 +48,7 @@
   --text-align: center;
   --text-position: 0%;
   --text-margin: 11%;
-  --font-wheight: 500;
+  --font-weight: 500;
   --color: #dacd7d;
 }
 
@@ -57,7 +57,7 @@
   --text-align: center;
   --text-position: 0%;
   --text-margin: 11%;
-  --font-wheight: 500;
+  --font-weight: 500;
   --color: white;
 }
 
@@ -66,13 +66,27 @@
   --text-align: center;
   --text-position: 55%;
   --text-margin: 11%;
-  --font-wheight: 500;
+  --font-weight: 500;
   --color: black;
+}
+
+[data-theme="8"] {
+  --font-family: Mojangles;
+  --text-align: center;
+  --text-position: 65%;
+  --text-margin: 11%;
+  --color: white;
+  --font-weight: 200;
 }
 
 @font-face {
   font-family: SegoeIcons;
   src:url("Assets/Segoe Fluent Icons.ttf");
+}
+
+@font-face {
+  font-family: Mojangles;
+  src:url("Assets/Mojangles.ttf");
 }
 
 body, html {
